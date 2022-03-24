@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("fonts/nunito-latin-regular.woff2") format("woff2"),
+    url("fonts/nunito-latin-regular.woff") format("woff");
+}
+
+body,
+html {
+  margin: 0.5rem;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(235, 235, 235);
+  height: calc(100% - 1rem);
+}
+
+.background {
+  border-radius: 1rem;
+  background-color: rgb(244, 249, 247);
+  height: 100%;
+}
+
+.shadow-2 {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02), 0 2px 4px rgba(0, 0, 0, 0.02),
+    0 4px 8px rgba(0, 0, 0, 0.02), 0 8px 16px rgba(0, 0, 0, 0.02),
+    0 16px 32px rgba(0, 0, 0, 0.02), 0 32px 64px rgba(0, 0, 0, 0.02);
+}
+
+.shadow-5 {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.05),
+    0 4px 8px rgba(0, 0, 0, 0.05), 0 8px 16px rgba(0, 0, 0, 0.05),
+    0 16px 32px rgba(0, 0, 0, 0.05), 0 32px 64px rgba(0, 0, 0, 0.05);
+}
+
+.bg-very-light-grey {
+  background-color: rgb(240, 240, 240);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-silver {
+  background-color: rgb(230, 230, 245);
+}
+
+.bg-blue {
+  background: linear-gradient(
+    0deg,
+    rgba(90, 142, 239, 1) 0%,
+    rgba(111, 162, 243, 1) 100%
+  );
+}
+
+.bg-light-grey {
+  background: linear-gradient(
+    0deg,
+    rgb(232, 232, 232) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
+.bg-super-light-grey {
+  background-color: rgb(245, 245, 245);
+}
+
+.bg-green {
+  background: linear-gradient(0deg, rgb(73, 158, 71) 0%, rgb(94, 212, 92) 100%);
+}
+
+.white {
+  color: white;
+}
+
+.darkgray {
+  color: rgb(109, 109, 109);
+}
+
+.greyBlue {
+  color: rgb(130, 116, 182);
+}
+
+.menuWidth {
+  min-width: 12rem;
+}
+
+.chartHeight {
+  height: 17rem;
+}
+
+.roundedMore {
+  border-radius: 0.5rem;
+}
+
+.border-grey {
+  border: 1px solid rgb(225, 225, 225);
+}
+.modalArea {
+  text-align: center;
+}
+.popup-content {
+  position: relative;
+  margin: auto;
+  max-width: 600px;
+  width: 90%;
+  pointer-events: auto;
+
+  background-color: #292d3e;
+  border: 1px solid #464545;
+  color: #fff;
+}
+.modal {
+  font-size: 12px;
+  background-color: green;
+  padding: 20px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
